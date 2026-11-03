@@ -65,10 +65,10 @@ HTTP 服务默认监听 `0.0.0.0:8000`，可通过 `MCP_HOST` 和 `MCP_PORT` 修
 uvx --from . silvercare-mcp
 ```
 
-从 GitHub 直接运行（替换 `<GITHUB_USERNAME>`）：
+从 GitHub 直接运行：
 
 ```bash
-uvx --from git+https://github.com/<GITHUB_USERNAME>/silvercare-health-profile-mcp.git silvercare-mcp
+uvx --from git+https://github.com/wake1103/silvercare-health-profile-mcp.git silvercare-mcp
 ```
 
 uvx 默认以 stdio 方式启动。如需 HTTP：
@@ -83,7 +83,7 @@ MCP_TRANSPORT=streamable-http uvx --from . silvercare-mcp
 
 ### 方式 A：UVX（推荐）
 
-在 AgentArts 创建 MCP 服务时选择 **UVX** 安装方式，使用以下配置（替换 `<GITHUB_USERNAME>`）：
+在 AgentArts 创建 MCP 服务时选择 **UVX** 安装方式，使用以下配置：
 
 ```json
 {
@@ -92,7 +92,7 @@ MCP_TRANSPORT=streamable-http uvx --from . silvercare-mcp
       "command": "uvx",
       "args": [
         "--from",
-        "git+https://github.com/<GITHUB_USERNAME>/silvercare-health-profile-mcp.git",
+        "git+https://github.com/wake1103/silvercare-health-profile-mcp.git",
         "silvercare-mcp"
       ]
     }
